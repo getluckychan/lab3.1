@@ -1,5 +1,4 @@
 from math import sqrt, pi
-from sys import exit
 
 
 class Number:
