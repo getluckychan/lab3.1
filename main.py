@@ -1,4 +1,5 @@
 from math import sqrt, pi
+from sys import exit
 
 
 class Number():
@@ -7,17 +8,15 @@ class Number():
         self.y = float(y)
 
     def add(self):
-        print(self.x + self.y)
+        return self.x + self.y
 
     def sub(self):
-        print(self.x - self.y)
+        return self.x - self.y
 
 
 class Real(Number):
-    def sqrt(self):
-        new_number = sqrt(self.x ** self.y)
-        print(new_number)
+    def sqrt(self, other):
+        return pow(self.x, 1 / float(other))
 
     def step(self):
-        print(pi ** self.x)
-        print(pi ** self.y)
+        return pi ** self.x, pi ** self.y

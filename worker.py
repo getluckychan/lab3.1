@@ -2,11 +2,14 @@ from main import Number, Real
 
 
 def main_func():
-    first_number = float(input("Введіть перше число: "))
-    second_number = float(input("Введіть друге число: "))
-    working = Number(first_number, second_number)
-    new_working = Real(first_number, second_number)
-    return working.add(), working.sub(), new_working.sqrt(), new_working.step()
+    x = float(input("Введіть перше число: "))
+    y = float(input("Введіть друге число: "))
+    return Number(x, y).add(), Number(x, y).sub(), Real(x, y).sqrt(float(input("введіть дробове число: "))), Real(x,
+                                                                                                                  y).step()
 
 
-main_func()
+def display():
+    print(main_func())
+
+
+display()
