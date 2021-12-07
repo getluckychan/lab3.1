@@ -1,10 +1,10 @@
 from math import sqrt, pi
 
 
-class Number:
+class Number():
     def __init__(self, x, y):
-        self.x = x
-        self.y = y
+        self.x = float(x)
+        self.y = float(y)
 
     def add(self):
         print(self.x + self.y)
